@@ -1,0 +1,55 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	outline: 0;
+	box-sizing: border-box;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+ol, ul {
+	list-style: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+	background: #fafafa;
+}
+#top-nav-bar
+{
+	box-shadow: 1px 1px 10px lightgrey;
+}
+#site-logo
+{
+	width: 200px;
+	display: inline-block;
+	background-color: #17bab8;
+}
+#site-logo div
+{
+	display: inline-block;
+	padding: 20px;
+	color: white;
+}
+#toggle-leftbar
+{
+	width: 1000px;
+	text-align: right;
+	display: inline-block;
+}
+#toggle-leftbar div
+{
+	display: inline-block;
+	padding: 20px;
+	color: grey;
+}
