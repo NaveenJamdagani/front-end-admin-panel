@@ -22,16 +22,19 @@ table {
 	border-spacing: 0;
 }
 
-body {
+body, html {
 	background: #fafafa;
+	width: 100%;
+	height: 200%;
 }
 #top-nav-bar
 {
 	box-shadow: 1px 1px 10px lightgrey;
+	position: fixed;
 }
 #site-logo
 {
-	width: 200px;
+	width: 250px;
 	display: inline-block;
 	background-color: #17bab8;
 }
@@ -46,7 +49,7 @@ body {
 }
 #toggle-leftbar
 {
-	width: 1100px;
+	width: 1095px;
 	text-align: right;
 	display: inline-block;
 }
@@ -55,4 +58,67 @@ body {
 	display: inline-block;
 	padding: 20px;
 	color: grey;
+}
+#left-nav-bar
+{
+	position: fixed;
+	top: 5em;
+	bottom: 0;
+	border: 1px solid black;
+	width: 250px;
+	color: lightgrey;
+	overflow : auto;
+}
+	::-webkit-scrollbar {
+	width: 12px;
+	}
+
+	::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px     rgba(0,0,0,0.3); 
+	border-radius: 10px;
+	}
+
+	::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px     rgba(0,0,0,0.5); 
+	}
+#person-info
+{
+	background-color: #35353b;
+}
+#person-image img
+{
+	border-radius: 50%;
+	float: left;
+	padding: 10px;
+}
+#person-image a
+{
+	text-decoration: none;
+	color: lightgrey;
+	float: left;
+}
+#extra-settings
+{
+	display: inline-block;
+	padding: 20px;
+}
+#extra-settings a
+{
+	padding: 15px;
+	text-decoration: none;
+	color: lightgrey;
+}
+#list-all
+{
+	background-color: #2c2c31;
+}
+#list-all h2
+{
+	border: 1px solid black;
+	padding: 10px;
+}
+#list-all ul li
+{
+	padding: 10px;
 }
