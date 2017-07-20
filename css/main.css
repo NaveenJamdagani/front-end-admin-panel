@@ -28,10 +28,11 @@ body {
 #top-nav-bar
 {
 	box-shadow: 1px 1px 10px lightgrey;
+	font-size: 20px;
 }
 #site-logo
 {
-	width: 200px;
+	width: 250px;
 	display: inline-block;
 	background-color: #17bab8;
 }
@@ -40,7 +41,6 @@ body {
 	display: inline-block;
 	padding: 20px;
 	color: white;
-	font-size: 25px;
 	font-weight: bold;
 	font-family: cursive;
 }
@@ -50,9 +50,19 @@ body {
 	text-align: right;
 	display: inline-block;
 }
+#toggle-sidebar:hover
+{
+	background-color: #16b1af;
+	cursor: pointer;
+}
 #toggle-leftbar div
 {
 	display: inline-block;
 	padding: 20px;
 	color: grey;
+}
+#toggle-leftbar div:hover
+{
+	background-color: #f2f2f2;
+	cursor: pointer;
 }
