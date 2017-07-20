@@ -62,6 +62,9 @@ body {
 	height: 100px;
 	position: absolute;
 	background-color: lightgrey;
+}
+.dropdown-content
+{
 	display: none;
 }
 #search-bar input
