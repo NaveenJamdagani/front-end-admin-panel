@@ -56,3 +56,38 @@ body {
 	padding: 20px;
 	color: grey;
 }
+#search-bar
+{
+	width: 100%;
+	height: 100px;
+	position: absolute;
+	background-color: lightgrey;
+	display: none;
+}
+#search-bar input
+{
+	width: 50%;
+	position: absolute;
+	padding: 10px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+#extra-bar
+{	width: 220px;
+	box-shadow: 1px 1px 10px;
+}
+#extra-bar>div
+{
+	border: 1px solid lightgrey;
+	padding: 10px;
+}
+#mail-form div
+{
+	background-color: lightgrey;
+	display: inline-block;
+	width: 80px;
+	height: 80px;
+	margin: 5px;
+}
+
