@@ -22,13 +22,19 @@ table {
 	border-spacing: 0;
 }
 
-body {
+body, html {
 	background: #fafafa;
+	width: 100%;
+	height: 200%;
 }
 #top-nav-bar
 {
 	box-shadow: 1px 1px 10px lightgrey;
+<<<<<<< HEAD
 	font-size: 20px;
+=======
+	position: fixed;
+>>>>>>> left-nav-bar
 }
 #site-logo
 {
@@ -46,7 +52,7 @@ body {
 }
 #toggle-leftbar
 {
-	width: 1100px;
+	width: 1095px;
 	text-align: right;
 	display: inline-block;
 }
@@ -61,8 +67,92 @@ body {
 	padding: 20px;
 	color: grey;
 }
-#toggle-leftbar div:hover
+#left-nav-bar
 {
-	background-color: #f2f2f2;
+	position: fixed;
+	top: 5.2em;
+	bottom: 0;
+	width: 250px;
+	color: #5f5f5f;
+	overflow : auto;
+	font-size: 14px;
+}
+	::-webkit-scrollbar {
+	width: 12px;
+	}
+
+	::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px     rgba(0,0,0,0.3); 
+	border-radius: 10px;
+	}
+
+	::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px     rgba(0,0,0,0.5); 
+	}
+#person-info
+{
+	background-color: #35353b;
+}
+#person-image
+{
+	padding: 10px;
+}
+#person-image img
+{
+	border-radius: 50%;
+	float: left;
+}
+#person-image a
+{
+	text-decoration: none;
+	color: #968e8e;
+	float: right;
+}
+#person-image a:hover
+{
+	color: #17bab8;
 	cursor: pointer;
 }
+#extra-settings
+{
+	display: inline-block;
+	padding: 20px;
+}
+#extra-settings a
+{
+	padding: 15px;
+	text-decoration: none;
+	color: #5f5f5f;
+}
+#extra-settings a:hover
+{
+	background-color: #303035;
+	color: #17bab8;
+	cursor: pointer;
+}
+#list-all
+{
+	background-color: #2c2c31;
+}
+#list-all h2
+{
+	border: 1px solid #27272b;
+	padding: 10px;
+}
+#list-all ul li
+{
+	padding: 10px;
+	font-weight: bold;
+}
+#list-all ul li i
+{
+	padding-right: 5px;
+}
+#list-all ul li:hover
+{
+	background-color: #3a3b44;
+	color: #1ca2a2;
+	cursor: pointer;
+}
+
