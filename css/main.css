@@ -223,7 +223,6 @@ width: 10px;
 	left: 0;
 	text-align: center;
 	box-shadow: 1px 1px 10px lightgrey;
-	display: block;
 }
 
 #search-input
@@ -251,23 +250,43 @@ width: 10px;
 
 /*extra styles*/
 #extra-bar
-{	width: 220px;
-	box-shadow: 1px 1px 10px;
+{	
+	width: 240px;
+	border: 1px solid lightgrey;
+	top: 3.9em;
+	right: 6em;
+	font-size: 0.8em;
+	color: grey;
 }
 
 #extra-bar>div
 {
-	border: 1px solid lightgrey;
-	padding: 10px;
+	box-shadow: 1px 1px 1px lightgrey;
+	padding: 15px;
 }
 
 #mail-form div
 {
-	background-color: lightgrey;
-	display: inline-block;
+	background-color: #f1f1f1;
+	float: left;
 	width: 80px;
 	height: 80px;
-	margin: 5px;
+	margin: 12px;
+	padding: 1.8em;
+	border-radius: 5px;
+}
+.extra-bar-dropdown:hover
+{
+	color: #17bab8;
+	cursor: pointer;
+}
+#mail-form:after
+{
+	content: "";
+	display: block;
+	clear: both;
+	opacity: 0;
+	height: 0;
 }
 
 /*Notificaton center*/
