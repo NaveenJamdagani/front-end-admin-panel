@@ -1,10 +1,26 @@
-// $(document).ready(function () {
+ $(document).ready(function (){
 	
 // 	// DROPDOWN TOGGLE
-// 	$('.dropdown-link').on('click', function() {
-// 		$('.dropdown-content').removeClass('show');
-// 		$(this).siblings('.dropdown-content').toggleClass('show');
-// 	})
+	$('.dropdown-link').on('click', function(e) {
+		e.stopPropagation();
+		if($(this).siblings(".dropdown-content").hasClass("show"))
+		{
+			$(".dropdown-content").removeClass("show");
+		}
+		else 
+		{
+			$(".dropdown-content").removeClass("show");
+			$(this).siblings(".dropdown-content").addClass("show");
+		}
+	});
+	$(".dropdown-container").on("click",function(e)
+	{
+		e.stopPropagation();
+	})
+	$(document).click(function(){
+    	$(".dropdown-content").removeClass("show");
+	});
+});
 
 // 	document.querySelector('.dropdown-link').addEventListener('click', function (e) {
 // 		if(e.target.siblings('.dropdown-content').classList.consists('show')) {
@@ -15,3 +31,18 @@
 // 		}
 // 	})
 // })
+/* $(document).ready(function (){
+	
+	$('.dropdown-link').on('click', function() {
+			$('.dropdown-content').hide();
+	$(this).siblings('.dropdown-content').show(500);
+	});
+	$("#content-bar").on("click",function()
+	{
+		$('.dropdown-content').hide();
+	});
+	$("#toggle-sidebar").on("click",function()
+	{
+		$("#left-nav-bar").toggle(500);
+	});
+});*/
