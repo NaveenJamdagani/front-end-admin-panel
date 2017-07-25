@@ -13,7 +13,7 @@
 			$(this).siblings(".dropdown-content").addClass("show");
 		}
 	});
-	$(".dropdown-container").on("click",function(e)
+	$(".dropdown-content").on("click",function(e)
 	{
 		e.stopPropagation();
 	})
