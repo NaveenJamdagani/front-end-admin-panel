@@ -39,10 +39,12 @@ body, html
 /*Header*/
 #top-nav-bar
 {
-	box-shadow: 1px 1px 10px lightgrey;
+	box-shadow: 1px 1px 10px rgba(0,0,0,0.25);
 	font-size: 1em;
 	position: fixed;
 	width: 100%;
+	z-index: 111;
+	background-color: white;
 }
 
 /*Left-logo*/
@@ -258,6 +260,7 @@ width: 10px;
 	right: 6em;
 	font-size: 0.8em;
 	color: grey;
+	background-color: white;
 }
 
 #extra-bar>div
@@ -299,6 +302,7 @@ width: 10px;
 	overflow: scroll;
 	top: 3.9em;
 	right: 4em;
+	background-color: white;
 }
 
 #notification-bar li
@@ -359,7 +363,51 @@ width: 10px;
 /*Content of the page*/
 #content-bar
 {
-	height: 200%;
+	width: 70%;
+	position: absolute;
+	top: 3.9em;
+	left: 300px;
+	/*overflow: hidden;*/
+}
+.products-card
+{
+	width: 20%;
+	height: 40%;
+	border-radius: 10px;
+	box-shadow: 1px 1px 10px rgba(0,0,0,.1); 
+	display: inline-block;
+	margin: 20px;
+	transition: 0.5s;
+}
+.products-card:hover
+{
+	transform: scale(1.07,1.07);
+	box-shadow: 1px 1px 30px rgba(0,0,0,.2);
+	cursor: pointer;
+}
+.thumbnail
+{
+	border-radius: 10px 10px 0 0;
+}
+.products-price
+{
+	width: 70%;
+	height: 20%;
+	float: left;
+	padding: 20px;
+}
+.add-to-cart
+{
+	width: 30%;
+	height: 20%;
+	padding: 20px;
+	float: left;
+	border-left: 1px solid lightgrey;
+	border-radius: 0 0 10px 0;
+}
+.add-to-cart:hover
+{
+	background-color: lightblue;
 }
 .show
 {
