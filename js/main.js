@@ -22,14 +22,13 @@
 	});
 	$(".dropdown-list").on("click",function()
 	{
-		if($(this).siblings(".list-all-subtypes").hasClass("show"))
-		{
-			$(".list-all-subtypes").removeClass("show");
-		}
-		else
-		{
-			$(this).siblings(".list-all-subtypes").addClass("show");
-		}
+		$(this).siblings(".list-all-subtypes").toggleClass("show")
+	});
+	$(".toggle-left-navbar").on("click",function()
+	{
+		$(".left-nav-dropdown").toggleClass("active");
+		$("#content-bar").toggleClass("active");
+
 	});
 });
 
