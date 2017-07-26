@@ -20,6 +20,17 @@
 	$(document).click(function(){
     	$(".dropdown-content").removeClass("show");
 	});
+	$(".dropdown-list").on("click",function()
+	{
+		if($(this).siblings(".list-all-subtypes").hasClass("show"))
+		{
+			$(".list-all-subtypes").removeClass("show");
+		}
+		else
+		{
+			$(this).siblings(".list-all-subtypes").addClass("show");
+		}
+	});
 });
 
 // 	document.querySelector('.dropdown-link').addEventListener('click', function (e) {

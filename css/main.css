@@ -59,7 +59,6 @@ body, html
 {
 	display: inline-block;
 	padding: 1em;
-	margin-left: 20px;
 	color: white;
 	font-weight: bold;
 }
@@ -134,8 +133,7 @@ width: 10px;
 
 #person-image
 {
-	padding: 10px;
-	padding-left: 20px;
+	padding: 10px 0 10px 20px;
 }
 
 #person-image a:hover
@@ -159,8 +157,9 @@ width: 10px;
 {
 	float: left;
 	width: calc(100% - 50px);
-	padding: 10px;
-	padding-left: 1em;
+	padding-left: 10px;
+	padding-right: 10px;
+	text-align: right;
 }
 
 #person-name a
@@ -173,12 +172,12 @@ width: 10px;
 #extra-settings
 {
 	display: inline-block;
-	padding: 20px;
+	padding: 20px 0 20px 20px;
 }
 
 #extra-settings a
 {
-	padding: 15px;
+	padding: 20px;
 	text-decoration: none;
 	color: #5f5f5f;
 }
@@ -198,7 +197,7 @@ width: 10px;
 #list-all h2
 {
 	border: 1px solid #27272b;
-	padding: 12px;
+	padding: 20px;
 }
 
 #list-all ul li
@@ -211,6 +210,21 @@ width: 10px;
 #list-all ul li i
 {
 	padding-right: 10px;
+}
+.list-all-subtypes
+{
+	display: none;
+}
+.list-all-subtypes li
+{
+	border-left: 1px solid #27272b;
+	padding-left: 0;
+	margin-left: 20px;
+}
+.list-all-subtypes li:hover
+{
+	background-color: #2c2c31;
+	color: #1ca2a2;
 }
 
 #list-all ul .fa-angle-right
@@ -450,7 +464,7 @@ width: 10px;
 	width: 30%;
 	height: 20%;
 	padding: 1.55em 0;
-	border-top-left-radius: 50%;
+	border-top-left-radius: 100%;
 	text-align: center;
 	background-color: rgba(23, 186, 184, 0.42);
 	color: white;
