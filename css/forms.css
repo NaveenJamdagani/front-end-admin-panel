@@ -6,7 +6,7 @@
 	padding: 5px;
 	border-radius: 5px;
 	color: white;
-	box-shadow: 1px 1px 10px grey;
+	box-shadow: 1px 1px 10px lightgrey;
 	margin-top: 10px;
 }
 #login-input span
@@ -31,6 +31,7 @@
 	width: 450px;
 	padding: 20px;
 	float: left;
+	background-color: white;
 }
 .forms-heading
 {
@@ -98,7 +99,7 @@
 	padding: 5px;
 	border-radius: 5px;
 	color: white;
-	box-shadow: 1px 1px 10px grey;
+	box-shadow: 1px 1px 10px lightgrey;
 	margin-top: 10px;
 }
 #sign-up-submit input:first-child
@@ -108,5 +109,36 @@
 #sign-up-submit span
 {
 	font-size: 0.8em;
+	margin-top: 10px;
+}
+/*Error Page*/
+#error-page
+{
+	text-align: center;
+}
+
+#error-page h1
+{
+	font-size: 10em;
+	color: #17bab8;
+}
+#error-page h2
+{
+	font-size: 2em;
+	padding-bottom: 10px;
+}
+#error-page p
+{
+	color: #1f9595;
+	padding-bottom: 10px;
+}
+#error-page input
+{
+	background-color: #17bab8;
+	font-size: 0.9em;
+	padding: 5px;
+	border-radius: 5px;
+	color: white;
+	box-shadow: 1px 1px 10px lightgrey;
 	margin-top: 10px;
 }
