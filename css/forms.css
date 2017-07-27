@@ -3,10 +3,12 @@
 	box-shadow: 1px 1px 10px lightgrey;
 	border-radius: 10px;
 	position: relative;
-	top: 100px;
+	top: 4em;
 	left: 300px;
 	display: inline-block;
 	margin: 20px;
+	width: 500px;
+	padding: 20px;
 }
 .sign-up-heading
 {
@@ -41,14 +43,15 @@
 	color: #1f9595;
 	font-size: 1.2em;
 	display: inline-block;
-	padding-left: 10px;
 }
 .sign-up-input
 {
-	background-color: #f8f8f8;
-	padding: 20px;
+	background-color: #efefef;
+	padding: 50px;
 	border-radius: 10px;
 	padding-left: 20px;
+	margin-top: 5px;
+	margin-bottom: 5px;
 }
 .sign-up-input h2
 {
@@ -57,8 +60,31 @@
 }
 .sign-up-input input
 {
-	width: 80%;
+	width: 100%;
 	font-size: 0.8em;
 	padding: 5px;
-	box-shadow: 1px 1px 1px lightgrey;
+	box-shadow: 1px 1px 10px lightgrey;
+}
+.sign-up-input input:first-of-type
+{
+	margin-bottom: 5px;
+}
+#sign-up-submit input
+{
+	background-color: #17bab8;
+	font-size: 0.9em;
+	padding: 5px;
+	border-radius: 5px;
+	color: white;
+	box-shadow: 1px 1px 10px grey;
+	margin-top: 10px;
+}
+#sign-up-submit input:first-child
+{
+	margin-right: 35%;	
+}
+#sign-up-submit span
+{
+	font-size: 0.8em;
+	margin-top: 10px;
 }
