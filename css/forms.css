@@ -1,27 +1,49 @@
-#sign-up-form
+/*Login form*/
+#login-input input
+{
+	background-color: #17bab8;
+	font-size: 0.9em;
+	padding: 5px;
+	border-radius: 5px;
+	color: white;
+	box-shadow: 1px 1px 10px grey;
+	margin-top: 10px;
+}
+#login-input span
+{
+	font-size: 0.8em;
+	text-decoration: underline;
+}
+#login-input span:hover
+{
+	cursor: pointer;
+	color: #1f9595;
+}
+/*Sign up form*/
+.forms-container
 {
 	box-shadow: 1px 1px 10px lightgrey;
 	border-radius: 10px;
 	position: relative;
 	top: 4em;
 	left: 300px;
-	display: inline-block;
 	margin: 20px;
-	width: 500px;
+	width: 450px;
 	padding: 20px;
+	float: left;
 }
-.sign-up-heading
+.forms-heading
 {
 	background-color: #17bab8;
 	padding: 20px;
 	border-radius: 10px 10px 0 0;
 }
-.sign-up-heading h1
+.forms-heading h1
 {
 	font-size: 2em;
 	color: white;
 }
-.sign-up-heading span
+#sign-up-heading span
 {
 	color: white;
 }
@@ -81,7 +103,7 @@
 }
 #sign-up-submit input:first-child
 {
-	margin-right: 35%;	
+	margin-right: 25%;	
 }
 #sign-up-submit span
 {
