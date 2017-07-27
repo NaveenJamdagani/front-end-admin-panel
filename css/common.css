@@ -35,6 +35,19 @@ body, html
 	/* height: 200%; */
 	font-family: sans-serif;
 }
+/*Content*/
+.content-bar
+{
+	position: absolute;
+	top: 3.9em;
+	left: 260px;
+	transition: 1s;
+	text-align: center;
+}
+.content-bar.active
+{
+	left: 0;
+}
 
 /*Header*/
 #top-nav-bar

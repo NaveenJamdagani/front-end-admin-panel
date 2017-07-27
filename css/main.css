@@ -1,16 +1,4 @@
 /*Content of the page*/
-#content-bar
-{
-	position: absolute;
-	top: 3.9em;
-	left: 260px;
-	transition: 1s;
-	text-align: center;
-}
-#content-bar.active
-{
-	left: 0;
-}
 .products-card
 {
 	width: 200px;
