@@ -27,7 +27,7 @@
 	$(".toggle-left-navbar").on("click",function()
 	{
 		$(".left-nav-dropdown").toggleClass("active");
-		$("#content-bar").toggleClass("active");
+		$(".content-bar").toggleClass("active");
 
 	});
 });
