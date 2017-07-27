@@ -1,0 +1,64 @@
+#sign-up-form
+{
+	box-shadow: 1px 1px 10px lightgrey;
+	border-radius: 10px;
+	position: relative;
+	top: 100px;
+	left: 300px;
+	display: inline-block;
+	margin: 20px;
+}
+.sign-up-heading
+{
+	background-color: #17bab8;
+	padding: 20px;
+	border-radius: 10px 10px 0 0;
+}
+.sign-up-heading h1
+{
+	font-size: 2em;
+	color: white;
+}
+.sign-up-heading span
+{
+	color: white;
+}
+#sign-up-content
+{
+	padding: 20px;
+}
+.sign-up-info span
+{
+	background-color: #17bab8;
+	border-radius: 50%;
+	color: white;
+	padding: 10px;
+	position: absolute;
+	left: -10px;
+}
+.sign-up-info h1
+{
+	color: #1f9595;
+	font-size: 1.2em;
+	display: inline-block;
+	padding-left: 10px;
+}
+.sign-up-input
+{
+	background-color: #f8f8f8;
+	padding: 20px;
+	border-radius: 10px;
+	padding-left: 20px;
+}
+.sign-up-input h2
+{
+	color: #827d7d;
+	font-size: 0.9em;
+}
+.sign-up-input input
+{
+	width: 80%;
+	font-size: 0.8em;
+	padding: 5px;
+	box-shadow: 1px 1px 1px lightgrey;
+}
