@@ -4,7 +4,6 @@
 	top: 3.9em;
 	left: 260px;
 	transition: 1s;
-	text-align: center;
 }
 .content-bar.active
 {
@@ -91,6 +90,8 @@
 {
 	color: #827d7d;
 	font-size: 0.9em;
+	padding-top: 10px;
+	padding-bottom: 5px;
 }
 .sign-up-input input
 {
