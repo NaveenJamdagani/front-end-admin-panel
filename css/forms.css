@@ -1,0 +1,156 @@
+.content-bar
+{
+	position: absolute;
+	top: 3.9em;
+	left: 260px;
+	transition: 1s;
+}
+.content-bar.active
+{
+	left: 0;
+}
+
+/*Login form*/
+#login-input input
+{
+	background-color: #17bab8;
+	font-size: 0.9em;
+	padding: 5px;
+	border-radius: 5px;
+	color: white;
+	box-shadow: 1px 1px 10px lightgrey;
+	margin-top: 10px;
+}
+#login-input span
+{
+	font-size: 0.8em;
+	text-decoration: underline;
+}
+#login-input span:hover
+{
+	cursor: pointer;
+	color: #1f9595;
+}
+/*Sign up form*/
+.forms-container
+{
+	box-shadow: 1px 1px 10px lightgrey;
+	border-radius: 10px;
+	position: relative;
+	margin: 20px;
+	width: 450px;
+	padding: 20px;
+	float: left;
+	background-color: white;
+}
+.forms-heading
+{
+	background-color: #17bab8;
+	padding: 20px;
+	border-radius: 10px 10px 0 0;
+}
+.forms-heading h1
+{
+	font-size: 2em;
+	color: white;
+}
+#sign-up-heading span
+{
+	color: white;
+}
+#sign-up-content
+{
+	padding: 20px;
+}
+.sign-up-info span
+{
+	background-color: #17bab8;
+	border-radius: 50%;
+	color: white;
+	padding: 10px;
+	position: absolute;
+	left: -10px;
+}
+.sign-up-info h1
+{
+	color: #1f9595;
+	font-size: 1.2em;
+	display: inline-block;
+}
+.sign-up-input
+{
+	background-color: #efefef;
+	padding: 50px;
+	border-radius: 10px;
+	padding-left: 20px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.sign-up-input h2
+{
+	color: #827d7d;
+	font-size: 0.9em;
+	padding-top: 10px;
+	padding-bottom: 5px;
+}
+.sign-up-input input
+{
+	width: 100%;
+	font-size: 0.8em;
+	padding: 5px;
+	box-shadow: 1px 1px 10px lightgrey;
+}
+.sign-up-input input:first-of-type
+{
+	margin-bottom: 5px;
+}
+#sign-up-submit input
+{
+	background-color: #17bab8;
+	font-size: 0.9em;
+	padding: 5px;
+	border-radius: 5px;
+	color: white;
+	box-shadow: 1px 1px 10px lightgrey;
+	margin-top: 10px;
+}
+#sign-up-submit input:first-child
+{
+	margin-right: 25%;	
+}
+#sign-up-submit span
+{
+	font-size: 0.8em;
+	margin-top: 10px;
+}
+/*Error Page*/
+#error-page
+{
+	text-align: center;
+}
+
+#error-page h1
+{
+	font-size: 10em;
+	color: #17bab8;
+}
+#error-page h2
+{
+	font-size: 2em;
+	padding-bottom: 10px;
+}
+#error-page p
+{
+	color: #1f9595;
+	padding-bottom: 10px;
+}
+#error-page input
+{
+	background-color: #17bab8;
+	font-size: 0.9em;
+	padding: 5px;
+	border-radius: 5px;
+	color: white;
+	box-shadow: 1px 1px 10px lightgrey;
+	margin-top: 10px;
+}
