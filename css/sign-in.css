@@ -1,99 +1,73 @@
 /*Login page*/
 #login-form
 {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%,-50%);
-}
-#login-form.active
-{
+	/*position: absolute;*/
+	/*top: 50%;*/
+	/*left: 50%;*/
+	/*transform: translate(-50%,-50%);*/
+	margin: 4em auto;
 	display: none;
 }
-#login-input input
+
+/*Sign up page*/
+#sign-up-form
 {
+	/*position: absolute;*/
+	/*left: 50%;*/
+	/*transform: translate(-50%);*/
+	margin: 4em auto;
+	display: none;
+}
+
+#sign-up-form.active, #login-form.active
+{
+	display: block;
+}
+
+#login-input {
+	padding: 2em;
+	text-align: right;
+}
+/*
+.forms-content a {
 	background-color: #17bab8;
 	font-size: 0.9em;
-	padding: 5px;
-	border-radius: 5px;
+	padding: .75em 1em;
+	border-radius: 2px;
 	color: white;
-	box-shadow: 1px 1px 10px lightgrey;
-	margin-top: 10px;
+	box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
+	min-width: 180px;
+	text-align: center;
+}*/
+
+#login-input div:first-child span {
+	font-size: .9em;
+	float: left;
+	padding-top: .5em;
 }
-#login-input input:hover
-{
-	cursor: pointer;
-}
-#login-input span
-{
-	font-size: 0.8em;
-	text-decoration: underline;
-}
+
 #login-input span:hover
 {
 	cursor: pointer;
 	color: #1f9595;
 }
-/*Common for both*/
-.forms-container
+
+#sign-up-heading span
 {
-	box-shadow: 1px 1px 10px lightgrey;
-	border-radius: 10px;
-	margin: 20px;
-	width: 450px;
-	padding: 20px;
-	float: left;
-	background-color: white;
-}
-.forms-heading
-{
-	background-color: #17bab8;
-	padding: 20px;
-	border-radius: 10px 10px 0 0;
-}
-.forms-heading h1
-{
-	font-size: 2em;
 	color: white;
 }
-.sign-up-input
+#sign-up-content
 {
-	background-color: #efefef;
-	padding: 50px;
-	border-radius: 10px;
-	padding-left: 20px;
-	margin-top: 5px;
-	margin-bottom: 5px;
+	padding: 20px;
 }
-.sign-up-input h2
+#login-form .sign-up-input
 {
-	color: #827d7d;
-	font-size: 0.9em;
-	padding-top: 10px;
-	padding-bottom: 5px;
+	padding: 2em;
 }
-.sign-up-input input
+
+#sign-up-form .sign-up-input
 {
-	width: 100%;
-	font-size: 0.8em;
-	padding: 5px;
-	box-shadow: 1px 1px 10px lightgrey;
-}
-.sign-up-input input:first-of-type
-{
-	margin-bottom: 5px;
-}
-/*Sign up page*/
-#sign-up-form
-{
-	position: absolute;
-	left: 50%;
-	transform: translate(-50%);
-	display: none;
-}
-#sign-up-form.active
-{
-	display: block;
+	padding: 1em 2em 2em;
 }
 #sign-up-submit input
 {
@@ -105,9 +79,9 @@
 	box-shadow: 1px 1px 10px lightgrey;
 	margin-top: 10px;
 }
-#sign-up-submit input:first-child
+#sign-up-submit
 {
-	margin-right: 25%;	
+	text-align: right;
 }
 #sign-up-submit span
 {

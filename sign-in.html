@@ -11,10 +11,12 @@
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 </head>
 <body>
-		<div id="login-form" class="forms-container">
-				<div id="login-form heading" class="forms-heading">
-					<h1>Login</h1>
-				</div>
+		<div id="login-form" class="forms-container active">
+			<div id="login-form heading" class="forms-heading">
+				<h1>Login</h1>
+			</div>
+			<div class="form-body">
+				
 				<div class="sign-up-input">
 					<h2>Username</h2>
 						<input type="text">
@@ -22,10 +24,15 @@
 						<input type="text">
 				</div>
 				<div id="login-input">
-					<a href="file:///E:/front-end-admin-panel/index.html"><input type="submit" value="Login"></a>
-					<span>Forgotten account?</span>
-					<p>Or</p>
-					<input type="submit" value="Sign-Up" id="sign-up-class">
+					<div>
+						<a href="file:///E:/front-end-admin-panel/index.html">Login</a>
+						<span>Forgotten account?</span>
+					</div>
+					<div class="divider">
+						<span>Or</span>
+					</div>
+					<a href="#" id="sign-up-class">Sign Up</a>
+				</div>
 			</div>
 		</div>
 		<div id="sign-up-form" class="forms-container">
@@ -33,7 +40,7 @@
 					<h1>Sign Up Now!</h1>
 					<span>Sign up and tell us what you think of this site!</span>
 				</div>
-				<div id="sign-up-content">
+				<div id="sign-up-content" class="form-body">
 					<div id="sign-up-name" class="sign-up-info">
 						<span>1</span>
 						<h1>First Name & Address</h1>
@@ -65,9 +72,7 @@
 						</div>
 					</div>
 					<div id="sign-up-submit">
-						<a href="file:///E:/front-end-admin-panel/index.html"><input type="submit"></a>
-						<input type="checkbox">
-						<span>You agree to our Terms and Policy</span>
+						<a href="file:///E:/front-end-admin-panel/index.html">Submit</a>
 					</div>
 				</div>
 			</div>

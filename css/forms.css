@@ -1,39 +1,65 @@
-#login-input input
-{
-	background-color: #17bab8;
-	font-size: 0.9em;
-	padding: 5px;
-	border-radius: 5px;
-	color: white;
-	box-shadow: 1px 1px 10px lightgrey;
-	margin-top: 10px;
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	outline: 0;
+	box-sizing: border-box;
 }
-#login-input span
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section 
 {
-	font-size: 0.8em;
-	text-decoration: underline;
+	display: block;
 }
-#login-input span:hover
+
+ol, ul 
 {
+	list-style: none;
+}
+
+table 
+{
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body, html 
+{
+	background: #fafafa;
+	width: 100%;
+	font-family: sans-serif;
+}
+
+a {
+	text-decoration: none;
+	display: inline-block;
+}
+
+
+input[type='submit'] {
 	cursor: pointer;
-	color: #1f9595;
 }
+
 /*Sign up form*/
 .forms-container
 {
-	box-shadow: 1px 1px 10px lightgrey;
+	box-shadow: 1px 1px 1em rgba(0,0,0,.1);
 	border-radius: 10px;
 	position: relative;
 	margin: 20px;
 	width: 450px;
-	padding: 20px;
-	float: left;
 	background-color: white;
+	border: solid 1px #dce0e0;
+	text-align: left;
 }
 .forms-heading
 {
 	background-color: #17bab8;
-	padding: 20px;
+	padding: 2em;
 	border-radius: 10px 10px 0 0;
 }
 .forms-heading h1
@@ -41,38 +67,75 @@
 	font-size: 2em;
 	color: white;
 }
-#sign-up-heading span
-{
+
+.form-body {
+	padding: 20px 1em;
+}
+
+
+.form-body a {
+	background-color: #17bab8;
+	font-size: 0.9em;
+	padding: .75em 1em;
+	border-radius: 2px;
 	color: white;
+	box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
+	min-width: 180px;
+	text-align: center;
 }
-#sign-up-content
-{
-	padding: 20px;
+
+.divider {
+	position: relative;
+	padding: 2em;
+	text-align: center;
 }
+
+.divider:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 2.5em;
+	border-top: solid 1px #dce0e0;
+}
+
+.divider span {
+	background-color: white;
+	color: lightgrey;
+	padding: 1em;
+	position: relative;
+	z-index: 11;
+}
+
+
+.sign-up-info {
+	position: relative;
+	padding: 1em 0;
+}
+
 .sign-up-info span
 {
 	background-color: #17bab8;
-	border-radius: 50%;
-	color: white;
-	padding: 10px;
-	position: absolute;
-	left: -10px;
+    background-color: #17bab8;
+    border-radius: 50%;
+    color: white;
+    padding: .5em 0.75em;
+    position: absolute;
+	left: -2.5em;
+	top: 0.5em;
 }
 .sign-up-info h1
 {
 	color: #1f9595;
 	font-size: 1.2em;
 	display: inline-block;
+	padding-left: 1em;
 }
-.sign-up-input
-{
-	background-color: #efefef;
-	padding: 50px;
-	border-radius: 10px;
-	padding-left: 20px;
-	margin-top: 5px;
-	margin-bottom: 5px;
+
+.sign-up-input {
+	padding: 2em;
 }
+
 .sign-up-input h2
 {
 	color: #827d7d;
@@ -84,32 +147,10 @@
 {
 	width: 100%;
 	font-size: 0.8em;
-	padding: 5px;
-	box-shadow: 1px 1px 10px lightgrey;
+	padding: .75em 1em;
+	border: solid 1px #eee;
 }
-.sign-up-input input:first-of-type
-{
-	margin-bottom: 5px;
-}
-#sign-up-submit input
-{
-	background-color: #17bab8;
-	font-size: 0.9em;
-	padding: 5px;
-	border-radius: 5px;
-	color: white;
-	box-shadow: 1px 1px 10px lightgrey;
-	margin-top: 10px;
-}
-#sign-up-submit input:first-child
-{
-	margin-right: 25%;	
-}
-#sign-up-submit span
-{
-	font-size: 0.8em;
-	margin-top: 10px;
-}
+
 /*Error Page*/
 #error-page
 {

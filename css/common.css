@@ -42,6 +42,7 @@ body, html
 	top: 3.9em;
 	left: 260px;
 	transition: 1s;
+	text-align: center;
 }
 .content-bar.active
 {
@@ -56,7 +57,7 @@ body, html
 	position: fixed;
 	width: 100%;
 	z-index: 111;
-	background-color: white;
+	background-color: #f6f6f6;
 }
 
 /*Left-logo*/
@@ -91,6 +92,7 @@ body, html
 .dropdown-content
 {
 	position: absolute;
+	z-index: 11;
 	display: none;
 }
 
@@ -113,34 +115,33 @@ body, html
 {
 	position: fixed;
 	top: 3.6em;
-	left: 0;	
+	left: 0;
 	bottom: 0;
 	width: 250px;
 	color: #5f5f5f;
 	font-size: 14px;
 	display: block;
 	transition: 1s;
+	overflow: auto;
 }
 #left-nav-bar.active
 {
 	left: -50%;
 }
 
-#left-nav-bar:hover
-{
-	overflow: auto;
-}
-
 ::-webkit-scrollbar {
-width: 10px;
+	background-color: #f1f1f1;
+	width: 10px;
 }
 
 ::-webkit-scrollbar-track {
--webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
 }
 
 ::-webkit-scrollbar-thumb {
--webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+	background-color: #ccc;
+	border: solid 1px #ccc;
+    -webkit-box-shadow: 0 0 6px rgba(0,0,0,0.5); 
 }
 
 /*Person info*/
@@ -151,7 +152,8 @@ width: 10px;
 
 #person-image
 {
-	padding: 10px 0 10px 20px;
+	padding: 1em 0 0 1em;
+	overflow: hidden;
 }
 
 #person-image a:hover
@@ -175,29 +177,35 @@ width: 10px;
 {
 	float: left;
 	width: calc(100% - 50px);
-	padding-left: 10px;
-	padding-right: 10px;
+	/* padding-left: 10px; */
+	/* padding-right: 10px; */
 	text-align: right;
+	padding: 1em;
 }
 
 #person-name a
 {
 	text-decoration: none;
 	color: #968e8e;
+	display: inline-block;
+	padding: 0;
 }
 
 /*Extra settings*/
 #extra-settings
 {
-	display: inline-block;
-	padding: 20px 0 20px 20px;
+	clear: both;
+	/* display: inline-block; */
+	padding: 1em;
+	text-align: center;
 }
 
 #extra-settings a
 {
-	padding: 20px;
+	padding: 1em;
 	text-decoration: none;
 	color: #5f5f5f;
+	display: inline-block;
 }
 
 #extra-settings a:hover
@@ -273,33 +281,38 @@ width: 10px;
 {
 	width: 100%;
 	padding: 0.5em;
-	background-color: white;
+	background-color: #f6f6f6;
 	left: 0;
 	text-align: center;
-	box-shadow: 1px 1px 10px lightgrey;
+	box-shadow: 0px -0.1em 1em rgba(0,0,0,.05);
 }
 
 #search-input
 {
 	position: relative;
 	width: 50%;
-	border: 1px solid lightgrey;
+	border-bottom: 1px solid lightgrey;
 	margin: 0 auto;
-	padding: 0.4em;
-	padding-left: 1.2em;
 }
 
 #search-input input
 {
+	background: transparent;
 	text-align: left;
+	padding: 0.5em 1em;
 	width: 100%;
-	padding-left: 5px;
+}
+
+#search-input input:focus {
+    background: #fafafa;
 }
 
 #search-input span
 {
 	position: absolute;
-	left: 5px;
+	right: .5em;
+	top: .5em;
+	color: #ccc;
 }
 
 /*extra styles*/
@@ -345,35 +358,61 @@ width: 10px;
 	height: 0;
 }
 
-/*Notificaton center*/
+/* sticky right controls Notificaton center*/
 #notification-bar
 {
-	height: 500px;
-	border: 1px solid lightgrey;
-	overflow: scroll;
+	width: 240px;
+	max-height: 320px;
+	border: 1px solid #eee;
+	overflow: auto;
 	top: 3.9em;
 	right: 4em;
+	font-size: 0.8em;
 	background-color: white;
+	/*scolor: grey;*/
+}
+
+#notification-bar h2:hover
+{
+	color: #17bab8;
+	cursor: pointer;
+}
+
+#notification-bar a {
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	background: #f1f1f1;
+	color: #333;
+	font-weight: bold;
+	border-top: solid 1px #dce0e0;
+}
+
+#notification-bar a:hover
+{
+	color: #17bab8;
+	cursor: pointer;
 }
 
 #notification-bar li
 {
-	border: 1px solid grey;
+	border-bottom: 1px solid #eeeeee;
+	background-color: #fafafa;
+	margin-bottom: 1em;
 }
 #notification-bar li div
 {
 	padding: 10px;
-	font-size: 0.8em;
 }
 #notification-bar h2,a
 {
 	padding: 10px;
-	font-size: 0.9em;
 }
 
 .user-image img
 {
 	border-radius: 50%;
+	height: auto;
 	width: 100%;
 }
 
@@ -388,10 +427,10 @@ width: 10px;
 	float: left;
 	width: calc(100% - 4em);
 }
-	
-#messenger-name
+.user-message:hover
 {
-	background-color: lightgrey;
+	color: #17bab8;
+	cursor: pointer;
 }
 
 #messenger-name li:after
@@ -405,10 +444,21 @@ width: 10px;
 /*Chat-box*/
 #chat-box-bar
 {
+	position: fixed;
 	width: 200px;
-	height: 400px;
-	background-color: red;
+	font-size: .8em;
+	border: solid 1px #dce0e0;
+	box-shadow: 0 5px 10px rgba(0,0,0,0.1);
 	top: 3.9em;
+	right: -400px;
+	bottom: 0;
+	background-color: white;
+	transition: all .5s ease-in-out;
+	display: block;
+	overflow: auto;
+}
+
+#chat-box-bar.show {
 	right: 0;
 }
 .show
