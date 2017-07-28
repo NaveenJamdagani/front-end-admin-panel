@@ -42,7 +42,6 @@ body, html
 	top: 3.9em;
 	left: 260px;
 	transition: 1s;
-	text-align: center;
 }
 .content-bar.active
 {
