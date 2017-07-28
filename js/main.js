@@ -30,6 +30,11 @@
 		$(".content-bar").toggleClass("active");
 
 	});
+	$("#sign-up-class").on("click",function()
+	{
+		$("#login-form").toggleClass("active");
+		$("#sign-up-form").toggleClass("active");
+	});
 });
 
 // 	document.querySelector('.dropdown-link').addEventListener('click', function (e) {
