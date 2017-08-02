@@ -61,13 +61,11 @@
 }
 .products-price h1
 {
-	font-size: 1.5em;
-	font-weight: bold;
+	font-size: 1em;
+	text-align: left;
+	font-style: italic;
 }
-.products-price p
-{
-	font-size: 0.8em;
-}
+
 .add-to-cart
 {
 	width: 30%;
