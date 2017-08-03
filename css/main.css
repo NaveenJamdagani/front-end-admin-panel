@@ -48,7 +48,6 @@
 	border-radius: 10px 10px 0 0;
 	font-size: 9em;
 	text-align: center;
-	/* font-family: cursive; */
 	color: #eee;
 	line-height: 1.5em;
 }
@@ -83,7 +82,48 @@
 .products-detail
 {
 	display: none;
+	padding: 0.8em;
+	text-align: center;
 }
+.products-detail div
+{
+	margin-bottom: 1.2em;
+}
+.products-detail .color
+{
+	font-size: 0.8em;
+	color: black;
+}
+
+.products-detail .star
+{
+	background-color: #2c2c31;
+	opacity: 0.8;
+	display: inline-block;
+	padding: 0.5em 1em;
+	border-radius: 5px;
+	font-size: 0.9em;
+}
+
+.products-detail .price
+{
+	font-weight: bold;
+	font-size: 1em;
+}
+
+.products-detail .offers a
+{
+	text-decoration: none;
+	color: crimson;
+	font-style: italic;
+	font-size: 1.1em;
+}
+
+.products-detail .offers a:hover
+{
+	text-decoration: underline;
+}
+
 .add-to-cart:hover 
 {
 	height: 100%;

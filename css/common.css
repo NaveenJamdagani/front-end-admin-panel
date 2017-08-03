@@ -90,6 +90,7 @@ body, html
 	color: white;
 	background-color: #17bab8;
 	opacity: 0.8;
+	margin-left: 0.6em;
 }
 
 #sticky-middle-controls a:hover
