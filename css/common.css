@@ -76,6 +76,28 @@ body, html
 	font-weight: bold;
 }
 
+/*sticky middle controls*/
+#sticky-middle-controls
+{
+	position: absolute;
+	top: 1em;
+	left: 50%;
+}
+
+#sticky-middle-controls a
+{
+	text-decoration: none;
+	color: white;
+	background-color: #17bab8;
+	opacity: 0.8;
+}
+
+#sticky-middle-controls a:hover
+{
+	opacity: 1;
+	text-decoration: underline;
+}
+
 /*Right controls styles*/
 #sticky-right-controls
 {
