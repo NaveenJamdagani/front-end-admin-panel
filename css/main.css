@@ -9,6 +9,7 @@
 	transition: 0.5s;
 	border-bottom: 0.5em solid #eee;
 	position: relative;
+	overflow: hidden;
 }
 .products-card:hover
 {
