@@ -35,29 +35,27 @@
 		$("#login-form").toggleClass("active");
 		$("#sign-up-form").toggleClass("active");
 	});
+	window.onload = function () {
+	var chart = new CanvasJS.Chart("chartContainer", {
+		theme: "theme2",//theme1
+		title:{
+			text: "Basic Column Chart - CanvasJS"              
+		},
+		animationEnabled: false,   // change to true
+		data: [              
+		{
+			// Change type to "bar", "area", "spline", "pie",etc.
+			type: "column",
+			dataPoints: [
+				{ label: "apple",  y: 10  },
+				{ label: "orange", y: 15  },
+				{ label: "banana", y: 25  },
+				{ label: "mango",  y: 30  },
+				{ label: "grape",  y: 28  }
+			]
+		}
+		]
+	});
+	chart.render();
+}
 });
-
-// 	document.querySelector('.dropdown-link').addEventListener('click', function (e) {
-// 		if(e.target.siblings('.dropdown-content').classList.consists('show')) {
-// 			e.target.siblings('.dropdown-content').classList.remove('show')
-// 		}
-// 		else {
-// 			e.target.siblings('.dropdown-content').classList.add('show')
-// 		}
-// 	})
-// })
-/* $(document).ready(function (){
-	
-	$('.dropdown-link').on('click', function() {
-			$('.dropdown-content').hide();
-	$(this).siblings('.dropdown-content').show(500);
-	});
-	$("#content-bar").on("click",function()
-	{
-		$('.dropdown-content').hide();
-	});
-	$("#toggle-sidebar").on("click",function()
-	{
-		$("#left-nav-bar").toggle(500);
-	});
-});*/
